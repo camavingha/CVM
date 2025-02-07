@@ -13,7 +13,7 @@ def generate_random_values():
         data["current"] = round(random.uniform(0, 10), 2)  # Random current (0-10A)
         data["voltage"] = round(random.uniform(200, 240), 2)  # Random voltage (200-240V)
         data["power"] = round(data["current"] * data["voltage"], 2)  # Calculate power (W)
-        time.sleep(1)
+        time.sleep(5)
 
     
 @app.route('/')

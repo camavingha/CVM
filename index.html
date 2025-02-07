@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Power Management Dashboard</title>
+    <title>Flask App</title>
     <link rel="stylesheet" href="style.css">
     <script>
         function updateData() {
@@ -15,15 +15,17 @@
                     document.getElementById('power').innerText = data.power + " W";
                 });
         }
-        setInterval(updateData, 5000);
+        setInterval(updateData, 1000);
         window.onload = updateData;
     </script>
 </head>
 <body>
+    <h1>Welcome to the Flask App</h1>
+    <p>Data will be displayed here.</p>
     <div class="dashboard">
         <h1>Power Management Dashboard</h1>
         <div class="card">
-            <h2>Current</h2>
+            <h2>Current </h2>
             <p id="current">0 A</p>
         </div>
         <div class="card">
